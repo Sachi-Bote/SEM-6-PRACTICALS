@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SweetBite Bakery</title>
+
+  <!-- ✅ External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Internal CSS -->
+  <style>
+    /* Internal CSS example */
+    .offer-bar {
+      background: #ff3b7d;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 12px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    table caption {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #6d1b1b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <h1>🍰 SweetBite Bakery</h1>
+      <p>Freshly Baked Happiness Every Day!</p>
+    </div>
+
+    <!-- ✅ Moving text -->
+    <marquee behavior="scroll" direction="left" scrollamount="8" class="marquee">
+      🎉 Today Offer: Buy 1 Get 1 Cupcake | Free Delivery Above ₹499 | Custom Cakes Available 🎂
+    </marquee>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#offers">Offers</a>
+    <a href="#menu">Cake Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#order">Order Now</a>
+    <a href="#location">Location</a>
+  </nav>
+
+  <!-- HOME / HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Welcome to SweetBite Bakery 🍩</h2>
+      <p>
+        We bake fresh cakes, cupcakes, pastries, and desserts with love ❤️.
+        Order delicious cakes for birthdays, anniversaries, and special events.
+      </p>
+
+      <!-- ✅ Inline CSS example -->
+      <a href="#order">
+        <button style="background:#ff3b7d; color:white; border:none; padding:12px 20px; border-radius:12px; cursor:pointer; font-size:16px;">
+          🎂 Order Cake Now
+        </button>
+      </a>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1542826438-2183bfa3a0b2?auto=format&fit=crop&w=800&q=80" alt="Cake Banner" />
+    </div>
+  </section>
+
+  <!-- OFFERS SECTION -->
+  <section class="section" id="offers">
+    <h2>⭐ Special Offers</h2>
+
+    <div class="offer-bar">
+      🎁 Weekend Special: 20% OFF on Chocolate Cakes 🍫
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🍫 Bestseller</h3>
+        <p>Chocolate Truffle Cake - Most loved by customers!</p>
+      </div>
+
+      <div class="card">
+        <h3>🎂 Custom Cakes</h3>
+        <p>Get cakes designed for birthdays, weddings & events!</p>
+      </div>
+
+      <div class="card">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Same day delivery available in your city.</p>
+      </div>
+    </div>
+
+    <h3>✅ Why SweetBite?</h3>
+    <ul class="list">
+      <li>Fresh Ingredients & Pure Taste</li>
+      <li>Custom Name & Photo Cakes</li>
+      <li>Hygienic Baking</li>
+      <li>Affordable Pricing</li>
+    </ul>
+  </section>
+
+  <!-- CAKE MENU TABLE -->
+  <section class="section" id="menu">
+    <h2>🍰 Cake Menu</h2>
+
+    <table class="menu-table">
+      <caption>SweetBite Cake Menu</caption>
+
+      <thead>
+        <tr>
+          <th>Cake Name</th>
+          <th>Flavour</th>
+          <th>Size</th>
+          <th>Price</th>
+          <th>Rating</th>
+          <th>Order</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Chocolate Truffle</td>
+          <td>Chocolate</td>
+          <td>1 Kg</td>
+          <td>₹650</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td><a href="#order" class="order-link">Order</a></td>
+        </tr>
+
+        <tr>
+          <td>Red Velvet</td>
+          <td>Vanilla + Cream</td>
+          <td>1 Kg</td>
+          <td>₹750</td>
+          <td>⭐⭐⭐⭐</td>
+          <td><a href="#order" class="order-link">Order</a></td>
+        </tr>
+
+        <tr>
+          <td>Black Forest</td>
+          <td>Chocolate + Cherry</td>
+          <td>1 Kg</td>
+          <td>₹600</td>
+          <td>⭐⭐⭐⭐</td>
+          <td><a href="#order" class="order-link">Order</a></td>
+        </tr>
+
+        <tr>
+          <td>Butterscotch</td>
+          <td>Caramel</td>
+          <td>1 Kg</td>
+          <td>₹620</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td><a href="#order" class="order-link">Order</a></td>
+        </tr>
+
+        <tr>
+          <td>Pineapple Cake</td>
+          <td>Fruit</td>
+          <td>1 Kg</td>
+          <td>₹550</td>
+          <td>⭐⭐⭐</td>
+          <td><a href="#order" class="order-link">Order</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <h2>📸 Cake Gallery</h2>
+    <p>Click an image to view in full size.</p>
+
+    <div class="gallery">
+      <a target="_blank" href="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Cake 1">
+      </a>
+
+      <a target="_blank" href="https://images.unsplash.com/photo-1542826438-2183bfa3a0b2?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1542826438-2183bfa3a0b2?auto=format&fit=crop&w=500&q=80" alt="Cake 2">
+      </a>
+
+      <a target="_blank" href="https://images.unsplash.com/photo-1607478900766-efe13248b125?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?auto=format&fit=crop&w=500&q=80" alt="Cake 3">
+      </a>
+
+      <a target="_blank" href="https://images.unsplash.com/photo-1562440499-64c9a111f713?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?auto=format&fit=crop&w=500&q=80" alt="Cake 4">
+      </a>
+
+      <a target="_blank" href="https://images.unsplash.com/photo-1557308536-ee471ef2c390?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1557308536-ee471ef2c390?auto=format&fit=crop&w=500&q=80" alt="Cake 5">
+      </a>
+
+      <a target="_blank" href="https://images.unsplash.com/photo-1559622214-f8a9850965bb?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1559622214-f8a9850965bb?auto=format&fit=crop&w=500&q=80" alt="Cake 6">
+      </a>
+    </div>
+  </section>
+
+  <!-- ORDER FORM -->
+  <section class="section" id="order">
+    <h2>🛒 Order Your Cake</h2>
+
+    <form class="order-form">
+      <label>Full Name:</label>
+      <input type="text" placeholder="Enter your name" required />
+
+      <label>Mobile Number:</label>
+      <input type="tel" placeholder="Enter mobile number" required />
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter email" />
+
+      <label>Select Cake:</label>
+      <select required>
+        <option value="">-- Select Cake --</option>
+        <option>Chocolate Truffle</option>
+        <option>Red Velvet</option>
+        <option>Black Forest</option>
+        <option>Butterscotch</option>
+        <option>Pineapple</option>
+      </select>
+
+      <label>Choose Size:</label>
+      <div class="radio-group">
+        <input type="radio" name="size" checked /> 0.5 Kg
+        <input type="radio" name="size" /> 1 Kg
+        <input type="radio" name="size" /> 2 Kg
+      </div>
+
+      <label>Extras:</label>
+      <div class="check-group">
+        <input type="checkbox" /> Candles
+        <input type="checkbox" /> Greeting Card
+        <input type="checkbox" /> Photo Print
+      </div>
+
+      <label>Delivery Date:</label>
+      <input type="date" required />
+
+      <label>Delivery Address:</label>
+      <textarea rows="3" placeholder="Enter full address" required></textarea>
+
+      <label>Message on Cake:</label>
+      <input type="text" placeholder="Example: Happy Birthday Sachi!" />
+
+      <label>Payment Mode:</label>
+      <select required>
+        <option>Cash on Delivery</option>
+        <option>UPI</option>
+        <option>Card</option>
+      </select>
+
+      <button type="submit" class="submit-btn">✅ Place Order</button>
+      <button type="reset" class="reset-btn">♻ Reset</button>
+    </form>
+  </section>
+
+  <!-- LOCATION + FRAMES -->
+  <section class="section" id="location">
+    <h2>📍 Our Location (Frames / iframe)</h2>
+
+    <div class="frame-grid">
+      <div>
+        <h3>🗺️ Google Map</h3>
+        <iframe
+          src="https://www.google.com/maps?q=pune&output=embed"
+          width="100%"
+          height="250"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <div>
+        <h3>📌 Bakery Info (iframe)</h3>
+        <iframe
+          src="https://example.com"
+          width="100%"
+          height="250"
+          style="border:0; border-radius: 12px;">
+        </iframe>
+      </div>
+    </div>
+
+    <h3>🕒 Working Hours</h3>
+    <ol class="list">
+      <li>Monday - Friday: 9 AM to 9 PM</li>
+      <li>Saturday: 9 AM to 10 PM</li>
+      <li>Sunday: 10 AM to 10 PM</li>
+    </ol>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>📞 Contact: +91 98765 43210 | ✉ Email: sweetbitebakery@gmail.com</p>
+    <p>
+      Follow Us:
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+    </p>
+    <p>© 2026 SweetBite Bakery. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
